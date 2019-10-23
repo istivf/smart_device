@@ -1,0 +1,160 @@
+.page-footer {
+  background-color: #FAFAFA;
+  padding-top: 31px;
+}
+
+.page-footer__wrapper {
+  width: 1410px;
+  margin-bottom: 40px;
+}
+
+.page-footer__main-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-footer__info {
+  display: flex;
+  justify-content: space-between;
+  width: 900px;
+}
+
+.page-footer__logo {
+  @include link;
+  display: flex;
+  color: #FFFFFF;
+  margin-bottom: 55px;
+}
+
+.page-footer__logo-img {
+  margin-right: 16px;
+}
+
+.page-footer__company-name {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-footer__name {
+  font-family: $robotoC;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 29px;
+  margin-top: 5px;
+  color: #203C42;
+}
+
+.page-footer__tagline {
+  font-family: $roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #788891;
+}
+
+.page-footer__social-list {
+  @include list;
+  display: flex;
+  justify-content: space-between;
+  width: 112px;
+}
+
+.page-footer__social-link {
+  display: block;
+  position: relative;
+  width: 27px;
+  height: 27px;
+}
+
+.page-footer__years {
+  display: none;
+}
+
+.page-footer__social-link--fb::before {
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 27px;
+  top: 0;
+  left: 0;
+  background-image: url("../img/fb.svg");
+  background-repeat: no-repeat;
+}
+
+.page-footer__social-link--ok::before {
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 27px;
+  top: 0;
+  left: 0;
+  background-image: url("../img/ok.svg");
+  background-repeat: no-repeat;
+}
+
+.page-footer__social-link--vk::before {
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 27px;
+  top: 0;
+  left: 0;
+  background-image: url("../img/vk.svg");
+  background-repeat: no-repeat;
+}
+
+.page-footer__nav-list {
+  @include list;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100px;
+  width: 520px;
+}
+
+.page-footer__nav-link {
+  @include link
+  color: #626962;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.page-footer__title {
+  margin-top: 0;
+}
+
+.page-footer__contacts-list {
+  @include list;
+}
+
+.page-footer__adress {
+  @include noindent;
+  color: #626962;
+}
+
+.page-footer__contact-link {
+  @include link;
+  color: #626962;
+}
+
+.page-footer__bottom-section {
+  border-top: 1px solid #626962;
+}
+
+.page-footer__bottom-section-wrapper {
+  width: 1410px;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+
+.page-footer__privacy-terms {
+  @include link;
+  color: #626962;
+}
+
+.page-footer__developed-by {
+  margin-left: 180px;
+}

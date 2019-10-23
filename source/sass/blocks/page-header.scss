@@ -1,0 +1,133 @@
+.page-header {
+  background-color: #1B2D37;
+  color: #FFFFFF;
+  padding-top: 33px;
+  position: relative;
+  padding-bottom: 279px;
+  background-image: url("../img/headermask.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page-header__wrapper {
+  width: 1425px;
+  padding: 0;
+}
+
+.page-header__top-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 230px;
+}
+
+.page-header__logo {
+  @include link;
+  display: flex;
+  color: #FFFFFF;
+}
+
+.page-header__logo-img {
+  margin-right: 16px;
+}
+
+.page-header__company-name {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header__name {
+  font-family: $robotoC;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 29px;
+  margin-top: 5px;
+}
+
+.page-header__tagline {
+  font-family: $roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #788891;
+}
+
+.page-header__email,
+.page-header__phone-number {
+  @include link;
+  color: #FFFFFF;
+}
+
+.page-header__email {
+  position: relative;
+}
+
+.page-header__phone-number {
+  margin-left: 120px;
+  position: relative;
+}
+
+.page-header__email::after {
+    content: "";
+    position: absolute;
+    width: 19px;
+    height: 14px;
+    top: 2px;
+    left: -33px;
+    background-image: url("../img/email.svg");
+}
+
+.page-header__phone-number::after {
+    content: "";
+    position: absolute;
+    width: 17px;
+    height: 18px;
+    top: 2px;
+    left: -33px;
+    background-image: url("../img/phone.svg");
+}
+
+.page-header__button {
+  margin-left: 40px;
+}
+
+.page-header__info-block {
+  width: 700px;
+  position: relative;
+  left: 90px;
+}
+
+.page-header__title {
+  font-family: $robotoC;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 80px ;
+  line-height: 94px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.page-header__text {
+  font-size: 22px;
+  line-height: 34px;
+  margin-bottom: 45px;
+}
+
+.page-header__info-button {
+  background-color: #00B2FF;
+  border-radius: 5px;
+}
+
+.page-header__scroll {
+  border: none;
+  background: none;
+  position: absolute;
+  left: 203px;
+  top: 789px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+  opacity: 0.5;
+  transform: rotate(-90deg);
+}

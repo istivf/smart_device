@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "PT Mono";
+  src: url("../../fonts/PTMono-Regular.woff") format("woff"),
+    url("../../fonts/PTMono-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../../fonts/Roboto-Regular.woff") format("woff"),
+    url("../../fonts/Roboto-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("../../fonts/RobotoCondensed-Regular.woff") format("woff"),
+    url("../../fonts/RobotoCondensed-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("../../fonts/RobotoCondensed-Bold.woff") format("woff"),
+    url("../../fonts/RobotoCondensed-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: $PTMono;
+  color: #666666;
+  font-size: 16px;
+  line-height: 22px;
+}

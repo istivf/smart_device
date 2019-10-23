@@ -1,0 +1,75 @@
+.services {
+  background-color: #1B2D37;
+  padding: 95px 0;
+}
+
+.services__title {
+  font-family: $robotoC;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 51px;
+  color: #FFFFFF;
+}
+
+.services__list {
+  @include list;
+  display: flex;
+  justify-content: space-between;
+}
+
+.services__item {
+  width: 370px;
+  height: 620px;
+  background-color: #666666;
+}
+
+.services__item--producing {
+  background-image: url("../img/producing.jpg");
+}
+
+.services__item--mounting {
+  background-image: url("../img/mounting.jpg");
+}
+
+.services__item--components {
+  background-image: url("../img/components.jpg");
+}
+
+.services__link {
+  @include link;
+  display: block;
+  position: relative;
+  padding-top: 60px;
+  padding-left: 50px;
+  padding-right: 125px;
+  box-sizing: border-box;
+  font-family: $roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: #FFFFFF;
+  height: inherit;
+  background-color: rgba(27,45,55,0.5);
+}
+
+.services__link::before {
+  content: "";
+  position: absolute;
+  height: 63px;
+  width: 63px;
+  top: 557px;
+  left: 306px;
+  background-color: #00B2FF;
+}
+
+.services__link::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 9px;
+  top: 585px;
+  left: 336px;
+  background-image: url("../img/arrow.svg");
+}

@@ -1,3 +1,36 @@
-h1 {
-  color: red;
+$PTMono: "PT Mono", arial, sans-serif;
+$roboto: "Roboto", arial, sans-serif;
+$robotoC: "Roboto Condensed", arial, sans-serif;
+$desktop-width: 1023px;
+$mobile-width: 767px;
+
+@mixin button {
+  border: none;
+  background: none;
 }
+
+@mixin link {
+  text-decoration: none;
+  color: #000000;
+}
+
+@mixin list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin noindent {
+  margin: 0;
+  padding: 0;
+}
+
+@import "blocks/scaffolding.scss";
+@import "blocks/container.scss";
+@import "blocks/visually-hidden.scss";
+@import "blocks/page-header.scss";
+@import "blocks/button.scss";
+@import "blocks/main-info.scss";
+@import "blocks/services.scss";
+@import "blocks/ask-us.scss";
+@import "blocks/page-footer.scss";

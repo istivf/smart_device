@@ -1,0 +1,91 @@
+.main-info {
+  margin-top: 110px;
+}
+
+.main-info__list {
+  @include list;
+  @include noindent;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 110px;
+}
+
+.main-info__item {
+  box-sizing: border-box;
+  width: 580px;
+  padding: 65px 43px 50px 45px;
+  border: 1px solid #EBEBEB;
+  border-left: 3px solid #00B2FF;
+  margin-bottom: 30px;
+}
+
+.main-info__item-title {
+  font-family: $robotoC;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 34px;
+  color: #00B2FF;
+}
+
+.main-info__item:hover {
+  background-color: #00B2FF;
+  border: 1px solid #00B2FF;
+  border-left: 3px solid #00B2FF;
+  color: #FFFFFF;
+}
+
+.main-info__item:hover .main-info__item-title {
+  color: #FFFFFF;
+}
+
+.main-info__item--deadlines,
+.main-info__item--suppliers,
+.main-info__item--privacy,
+.main-info__item--price {
+  position: relative;
+}
+
+.main-info__item--deadlines::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 43px;
+  width: 29px;
+  height: 35px;
+  background-image: url("../img/watch.svg");
+  fill: #00B2FF;
+}
+
+.main-info__title {
+  @include noindent;
+  font-family: $robotoC;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 51px;
+  color: #666666;
+}
+
+.main-info__text-two {
+  margin-bottom: 45px;
+}
+
+.main-info__about-company {
+  margin-bottom: 100px;
+  display: flex;
+}
+
+.main-info__button {
+  border: 1px solid #00B2FF;
+  border-radius: 5px;
+  padding: 15px 30px;
+  font-family: "Roboto Condensed",arial,sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  color: #00B2FF;
+}
