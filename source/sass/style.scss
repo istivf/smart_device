@@ -1,7 +1,7 @@
 $PTMono: "PT Mono", arial, sans-serif;
 $roboto: "Roboto", arial, sans-serif;
 $robotoC: "Roboto Condensed", arial, sans-serif;
-$desktop-width: 1023px;
+$tablet-width: 1023px;
 $mobile-width: 767px;
 
 @mixin button {
@@ -26,10 +26,10 @@ $mobile-width: 767px;
 }
 
 @import "blocks/scaffolding.scss";
+@import "blocks/button.scss";
 @import "blocks/container.scss";
 @import "blocks/visually-hidden.scss";
 @import "blocks/page-header.scss";
-@import "blocks/button.scss";
 @import "blocks/main-info.scss";
 @import "blocks/services.scss";
 @import "blocks/ask-us.scss";
