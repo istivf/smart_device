@@ -3,7 +3,7 @@
   color: #FFFFFF;
   padding-top: 33px;
   position: relative;
-  padding-bottom: 275px;
+  padding-bottom: 277px;
   background-image: url(../img/boards.png),url(../img/triangles2.png),url(../img/headermask.png);
   background-repeat: no-repeat,no-repeat,no-repeat;
   background-size: auto,auto,cover;
@@ -252,6 +252,10 @@
     margin-left: 20px;
     padding-left: 31px;
     padding-right: 31px;
+    padding-top: 19px;
+    font-size: 15px;
+    letter-spacing: 1.4px;
+    padding-bottom: 20px;
   }
 
 }

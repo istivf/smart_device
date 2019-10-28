@@ -23,11 +23,15 @@
 .main-info__item {
   box-sizing: border-box;
   width: 570px;
-  padding: 74px 43px 49px 41px;
+  padding: 39px 43px 49px 41px;
   border: 1px solid #EBEBEB;
   border-left: 3px solid #00B2FF;
   margin-bottom: 30px;
   background-color: #FFFFFF;
+}
+
+.main-info__item--privacy {
+  padding-top: 43px;
 }
 
 .main-info__item:nth-last-child(-n+2) {
@@ -42,6 +46,7 @@
   font-size: 24px;
   line-height: 34px;
   color: #00B2FF;
+  margin-top: 14px;
   margin-bottom: 16px;
 }
 
@@ -52,7 +57,11 @@
   color: #FFFFFF;
 }
 
-.main-info__item--deadlines:hover .main-info__item--deadlines::before{
+.main-info__list-icon {
+  fill: #00B2FF;
+}
+
+.main-info__item:hover .main-info__list-icon {
   fill: #FFFFFF;
 }
 
@@ -65,46 +74,6 @@
 .main-info__item--privacy,
 .main-info__item--price {
   position: relative;
-}
-
-.main-info__item--deadlines::before {
-  content: "";
-  position: absolute;
-  top: 30px;
-  left: 43px;
-  width: 29px;
-  height: 35px;
-  background-image: url("../img/watch.svg");
-}
-
-.main-info__item--suppliers::before {
-  content: "";
-  position: absolute;
-  top: 30px;
-  left: 43px;
-  width: 29px;
-  height: 35px;
-  background-image: url("../img/hired.svg");
-}
-
-.main-info__item--privacy::before {
-  content: "";
-  position: absolute;
-  top: 30px;
-  left: 43px;
-  width: 29px;
-  height: 35px;
-  background-image: url("../img/detective.svg");
-}
-
-.main-info__item--price::before {
-  content: "";
-  position: absolute;
-  top: 30px;
-  left: 43px;
-  width: 29px;
-  height: 35px;
-  background-image: url("../img/price.svg");
 }
 
 .main-info__date-img {
@@ -134,8 +103,12 @@
 }
 
 .main-info__about-company {
-  margin-bottom: 91px;
+  margin-bottom: 85px;
   display: flex;
+}
+
+.main-info__text-two--tablet {
+  display: none;
 }
 
 .main-info__button {
@@ -161,16 +134,54 @@
   .main-info__list {
     max-width: 720px;
     margin-left: 4px;
-    margin-bottom: -31px;
+    margin-bottom: 19px;
   }
 
   .main-info__item {
     width: 345px;
-    padding: 46px 26px 19px 26px;
+    padding: 24px 26px 20px 24px;
+  }
+
+  .main-info__item--suppliers {
+    padding-top: 21px;
+  }
+
+  .main-info__item--privacy {
+    padding-right: 15px;
+  }
+
+  .main-info__item:nth-last-child(-n+2) {
+    padding-bottom: 33px;
+  }
+
+  .main-info__list-icon--suppliers {
+    margin-bottom: 2px;
+    width: 32px;
+  }
+
+  .main-info__list-icon--privacy {
+    width: 30px;
+  }
+
+  .main-info__list-icon--price {
+    width: 33px;
+    margin-top: -2px;
+    margin-bottom: 2px;
   }
 
   .main-info__item-title {
+    margin-top: 1px;
     margin-bottom: 9px;
+  }
+
+  .main-info__item-title--privacy {
+    letter-spacing: 0px;
+    margin-bottom: 16px;
+    margin-top: 2px;
+  }
+
+  .main-info__item-title--price {
+    letter-spacing: 0px;
   }
 
   .main-info__item-text {
@@ -211,29 +222,65 @@
 
   .main-info__list {
     margin-left: -1px;
+    margin-bottom: 29px;
   }
 
   .main-info__item {
-    padding-top: 51px;
-    padding-bottom: 29px;
+    padding-bottom: 23px;
     margin-bottom: 20px;
-    padding-right: 4px;
+    padding-right: 8px;
+    padding-top: 24px;
+    padding-left: 24px;
+  }
+
+  .main-info__item--suppliers {
+    padding-top: 21px;
+  }
+
+  .main-info__list .main-info__item--privacy {
+    padding-top: 24px;
+    padding-right: 30px;
+    padding-bottom: 53px;
+  }
+
+  .main-info__item .main-info__item-title--privacy {
+    margin-top: 3px;
+    margin-bottom: 0;
+  }
+
+  .main-info__item:first-child {
+    padding-right: 16px;
+  }
+
+  .main-info__list .main-info__item--price {
+    padding-left: 25px;
+    padding-right: 15px;
+    padding-bottom: 26px;
   }
 
   .main-info__item-title {
     font-size: 20px;
-    margin-bottom: 7px;
+    margin-bottom: 10px;
     line-height: 28px;
+    margin-top: 6px;
   }
 
-  .main-info__item:nth-last-child(-n+2) {
-    padding-bottom: 24px;
-    padding-top: 61px;
+  .main-info__item--price .main-info__item-title {
+    margin-top: 2px;
+  }
+
+  .main-info__item--price {
     padding-right: 10px;
+    margin-right: 0;
   }
 
-  .main-info__list {
-    margin-bottom: -4px;
+  .main-info__item-text--privacy {
+    margin-top: -8px;
+    letter-spacing: 0px;
+  }
+
+  .main-info__item--price {
+    width: 100%
   }
 
   .main-info__company-info {
@@ -247,6 +294,10 @@
   .main-info__title {
     font-size: 28px;
     margin-bottom: 21px;
+  }
+
+  .main-info__item-title--price {
+    margin-bottom: 11px;
   }
 
   .main-info__text {

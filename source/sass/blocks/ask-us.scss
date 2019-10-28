@@ -54,8 +54,8 @@
 }
 
 .ask-us__name::-moz-placeholder,
-.ask-us__name::-moz-placeholder,
-.ask-us__name::-moz-placeholder {
+.ask-us__phone::-moz-placeholder,
+.ask-us__message::-moz-placeholder {
   color: #FFFFFFFF;
 }
 
@@ -148,7 +148,7 @@
   .ask-us {
     padding-top: 78px;
     background-image: none;
-    padding-bottom: 64px;
+    padding-bottom: 103px;
   }
 
   .ask-us__wrapper {
@@ -190,7 +190,7 @@
   }
 
   .ask-us__message {
-    margin-bottom: 38px;
+    margin-bottom: 37px;
     height: 160px;
     width: 100%;
   }
@@ -221,6 +221,7 @@
 @media (max-width: $mobile-width) {
   .ask-us {
     padding-top: 28px;
+    padding-bottom: 41px;
   }
 
   .ask-us__wrapper {
@@ -230,6 +231,7 @@
   .ask-us__title {
     font-size: 28px;
     line-height: 39px;
+    margin-left: 0;
   }
 
   .ask-us__text {
@@ -257,10 +259,12 @@
 
   .ask-us__form-wrapper {
     width: 100%;
+    margin-left: 0;
   }
 
   .ask-us__message {
     height: 104px;
+    margin-bottom: 25px;
   }
 
   .ask-us__form {
@@ -269,5 +273,15 @@
 
   .ask-us__buttons {
     flex-direction: column-reverse;
+  }
+
+  .ask-us__button {
+    padding-left: 27px;
+    width: 100%;
+    margin-bottom: 21px;
+  }
+
+  .ask-us__agreement-text {
+    margin-left: 34px;
   }
 }
