@@ -39,7 +39,9 @@
 }
 
 .page-header__contacts {
-  padding-top: 3px;
+  display: flex;
+  align-items: center;
+  padding-top: 0;
   padding-right: 7px;
 }
 
@@ -78,7 +80,7 @@
 }
 
 .page-header__phone-number {
-  margin-left: 113px;
+  margin-left: 122px;
   position: relative;
 }
 
@@ -91,7 +93,7 @@
     position: absolute;
     width: 19px;
     height: 14px;
-    top: 2px;
+    top: 4px;
     left: -39px;
     background-image: url("../img/email.svg");
 }
@@ -101,13 +103,13 @@
     position: absolute;
     width: 18px;
     height: 18px;
-    top: 0px;
+    top: 2px;
     left: -34px;
     background-image: url("../img/phone.svg");
 }
 
 .page-header__button {
-  margin-left: 40px;
+  margin-left: 50px;
 }
 
 .page-header__button-mobile {
@@ -202,13 +204,15 @@
 
   .page-header__contacts {
     display: flex;
-    padding-right: 4px;
+    padding-right: 6px;
   }
 
   .page-header__email-btn,
   .page-header__call-btn {
     display: block;
     padding: 0;
+    background-color: transparent;
+    border: none;
   }
 
   .page-header__email-btn {
@@ -282,7 +286,7 @@
   }
 
   .page-header__email-btn {
-    margin-right: 20px;
+    margin-right: 23px;
   }
 
   .page-header__title {

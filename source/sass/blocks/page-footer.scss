@@ -341,11 +341,11 @@
 
   .page-footer__contacts {
     position: relative;
-    width: 290px;
     padding-right: 10px;
+    max-width: 100%;
     box-sizing: border-box;
-    width: 100%;
     padding: 0;
+    width: 100%;
   }
 
   .page-footer__contacts-list {
@@ -366,9 +366,11 @@
   }
 
   .page-footer__nav-list {
-    width: 290px;
     margin-bottom: 53px;
     height: auto;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 15px;
   }
 
   .page-footer__title {
