@@ -1,6 +1,11 @@
 .page-footer {
   background-color: #FAFAFA;
   padding-top: 62px;
+  color: #8B9399;
+}
+
+.page-footer a:hover {
+  opacity: 0.5;
 }
 
 .page-footer__wrapper {
@@ -25,44 +30,6 @@
   font-family: $robotoC;
   width: 100%;
   max-width: 986px;
-}
-
-.page-footer__logo {
-  @include link;
-  display: flex;
-  color: #FFFFFF;
-  margin-bottom: 53px;
-  margin-top: 3px;
-}
-
-.page-footer__logo-img {
-  margin-right: 16px;
-}
-
-.page-footer__company-name {
-  display: flex;
-  flex-direction: column;
-}
-
-.page-footer__name {
-  font-family: $robotoC;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 25px;
-  line-height: 29px;
-  margin-top: 6px;
-  color: #203C42;
-}
-
-.page-footer__tagline {
-  font-family: $roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 14px;
-  color: #788891;
-  margin-top: 1px;
-  margin-left: 1px;
 }
 
 .page-footer__social-list {
@@ -129,7 +96,7 @@
 
 .page-footer__nav-link {
   @include link
-  color: #626962;
+  color: #8B9399;
   font-size: 15px;
   line-height: 25px;
 }
@@ -146,6 +113,7 @@
   text-transform: uppercase;
   letter-spacing: 0.7px;
   margin-bottom: 22px;
+  color: #1B2D37;
 }
 
 .page-footer__contacts {
@@ -169,12 +137,12 @@
 
 .page-footer__adress {
   @include noindent;
-  color: #626962;
+  color: #8B9399;
 }
 
 .page-footer__contact-link {
   @include link;
-  color: #626962;
+  color: #8B9399;
 }
 
 .page-footer__contacts-item {
@@ -182,7 +150,7 @@
 }
 
 .page-footer__bottom-section {
-  border-top: 1px solid #626962;
+  border-top: 1px solid #DCDDDC;
 }
 
 .page-footer__bottom-section-wrapper {
@@ -212,7 +180,7 @@
 
 .page-footer__privacy-terms {
   @include link;
-  color: #626962;
+  color: #8B9399;
   margin-right: -90px;
 }
 
@@ -226,11 +194,6 @@
     padding-top: 16px;
   }
 
-  .page-footer__logo {
-    margin-left: 4px;
-    margin-bottom: 25px;
-  }
-
   .page-footer__main-section {
     display: flex;
     flex-direction: column;
@@ -238,7 +201,7 @@
 
   .page-footer__links-wrapper {
     width: 100%;
-    border-bottom: 1px solid #626962;
+    border-bottom: 1px solid #DCDDDC;
   }
 
   .page-footer__links {
@@ -315,12 +278,6 @@
     align-items: center;
   }
 
-  .page-footer__logo {
-    margin-left: 0;
-    margin-top: 30px;
-    margin-bottom: 6px;
-  }
-
   .page-footer__years {
     margin-right: 10px;
     margin-bottom: 17px;
@@ -361,7 +318,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    border-bottom: 1px solid #626962;
+    border-bottom: 1px solid #DCDDDC;
     margin-bottom: 0;
   }
 
@@ -409,6 +366,7 @@
     flex-direction: column;
     padding: 0;
     align-items: center;
+    padding-bottom: 28px;
   }
 
   .page-footer__bottom-left {

@@ -9,6 +9,8 @@ var modalTextarea = overlay.querySelector('.modal__question');
 var navButton = document.querySelector('.page-footer__nav-title');
 var contactsButton = document.querySelector('.page-footer__title--contacts');
 var sendButton = overlay.querySelector('.modal__button');
+var scrollButton = document.querySelector('.page-header__scroll');
+var infoBlock = document.querySelector('.main-info');
 var ESC_KEYCODE = 27;
 
 var openModal = function () {
@@ -66,4 +68,8 @@ sendButton.addEventListener('click', function () {
   localStorage.setItem('name', nameInput.value);
   localStorage.setItem('phoneNumber', phoneInput.value);
   localStorage.setItem('question', modalTextarea.value);
+});
+
+scrollButton.addEventListener('click', function () {
+  infoBlock.scrollIntoView({block: 'center', behavior: 'smooth'});
 });

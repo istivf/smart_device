@@ -90,12 +90,21 @@
   padding-bottom: 15px;
 }
 
+.modal__button:hover {
+  background-color: #00a0e6;
+}
+
 .modal__agreement {
   margin-bottom: 37px;
   width: 337px;
   align-self: flex-end;
   margin-right: 27px;
   position: relative;
+}
+
+.modal__agreement:hover,
+.modal__close:hover {
+  opacity: 0.7;
 }
 
 .modal__agreement::before {

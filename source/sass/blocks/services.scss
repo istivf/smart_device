@@ -1,7 +1,7 @@
 .services {
   background-color: #1B2D37;
   padding-top: 59px;
-  padding-bottom: 127px;
+  padding-bottom: 97px;
 }
 
 .services__title {
@@ -25,37 +25,38 @@
   width: 370px;
   height: 620px;
   background-color: #666666;
-}
-
-.services__item--producing {
-  background-image: url("../img/producing.jpg");
-}
-
-.services__item--mounting {
-  background-image: url("../img/mounting.jpg");
-}
-
-.services__item--components {
-  background-image: url("../img/components.jpg");
+  position: relative;
+  margin-bottom: 30px;
 }
 
 .services__link {
   @include link;
   display: block;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   padding-top: 50px;
   padding-left: 43px;
-  padding-right: 155px;
+  padding-right: 170px;
   box-sizing: border-box;
-  font-family: $roboto;
+  font-family: $robotoC;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 30px;
   color: #FFFFFF;
   height: inherit;
-  background-color: rgba(27,45,55,0.5);
-  letter-spacing: -1.2px;
+  background-color: rgba(27,45,55,0.8);
+  letter-spacing: -1.7px;
+}
+
+.services__item-title {
+  @include noindent;
+  font-weight: normal;
+}
+
+.services__link:hover {
+  background-color: rgba(27,45,55,0.3);
 }
 
 .services__link::before {

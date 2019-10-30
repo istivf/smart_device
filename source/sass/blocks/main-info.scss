@@ -22,12 +22,13 @@
 
 .main-info__item {
   box-sizing: border-box;
-  width: 570px;
+  width: 48.8%;
   padding: 39px 43px 49px 41px;
   border: 1px solid #EBEBEB;
   border-left: 3px solid #00B2FF;
   margin-bottom: 30px;
   background-color: #FFFFFF;
+  cursor: pointer;
 }
 
 .main-info__item--privacy {
@@ -124,6 +125,10 @@
   letter-spacing: .05em;
   text-transform: uppercase;
   color: #00B2FF;
+}
+
+.main-info__button:hover {
+  background-color: #9ae0ff;
 }
 
 @media (max-width: $tablet-width) {

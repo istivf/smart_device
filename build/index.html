@@ -11,34 +11,35 @@
   <header class="page-header">
     <div class="page-header__wrapper container">
       <div class="page-header__top-section">
-        <a class="page-header__logo" href="#">
-          <img class="page-header__logo-img" src="img/logo.svg" alt="Логотип Smart Device">
-          <div class="page-header__company-name">
-            <span class="page-header__name">Smart Device</span>
-            <span class="page-header__tagline">умные технологии</span>
+        <a class="logo logo--mobile" href="#">
+          <img class="logo__img" src="img/logo.svg" alt="Логотип Smart Device">
+          <div class="logo__company-name">
+            <span class="logo__name">Smart Device</span>
+            <span class="logo__tagline">умные технологии</span>
           </div>
         </a>
         <div class="page-header__contacts">
+          <img class="page-header__email-icon" src="img/email.svg" alt="Написать нам" height="15">
           <a class="page-header__email" href="mailto:info@sd.ru">info@sd.ru</a>
-          <button class="page-header__email-btn"><img src="img/email.svg" alt="Написать нам" width="26" height="19"></button>
+          <img class="page-header__phone-icon" src="img/phone.svg" alt="Позвонить нам" width="18">
           <a class="page-header__phone-number" href="tel:+74950005252">+7 (495) 000 52 52</a>
-          <button class="page-header__call-btn"><img src="img/phone.svg" alt="Позвонить нам" width="24" height="24"></button>
-          <button class="page-header__button button">Заказать звонок</button>
+          <a class="page-header__button button" href="#">Заказать звонок</a>
         </div>
       </div>
       <div class="page-header__info">
         <h1 class="page-header__title">Печатные платы</h1>
         <div class="page-header__info-block">
           <p class="page-header__text">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-          <button class="page-header__info-button button"><span class="page-header__button-text">Получить бесплатную консультацию</span><span class="page-header__button-mobile">Бесплатная консультация</span></button>
-          <button class="page-header__scroll">Скролл <span class="page-header__span-down">вниз</span></button>
+          <button class="page-header__info-button button" type="button"><span class="page-header__button-text">Получить бесплатную консультацию</span><span class="page-header__button-mobile">Бесплатная консультация</span></button>
+          <button class="page-header__scroll" type="button">Скролл <span class="page-header__span-down">вниз</span></button>
         </div>
+        <!-- <img class="page-header__img" src="img/header-img.png" alt="Платы"> -->
       </div>
     </div>
   </header>
 
   <main>
-    <div class="main-info">
+    <section class="main-info">
       <div class="main-info__wrapper container">
         <ul class="main-info__list">
           <li class="main-info__item main-info__item--deadlines">
@@ -100,18 +101,18 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="services">
+    </section>
+    <section class="services">
       <div class="services-wrapper container">
         <h2 class="services__title">Service Device предлагает следующие товары и услуги</h2>
         <ul class="services__list">
-          <li class="services__item services__item--producing"><a class="services__link" href="#">Производство печатных плат</a></li>
-          <li class="services__item services__item--mounting"><a class="services__link" href="#">Монтаж печатных плат</a></li>
-          <li class="services__item services__item--components"><a class="services__link services__link--components" href="#">Комплектующие для светотехники</a></li>
+          <li class="services__item"><img class="services__item-img" src="img/producing.jpg" alt=""><a class="services__link" href="#"><h3 class="services__item-title">Производство печатных плат</h3></a></li>
+          <li class="services__item"><img class="services__item-img" src="img/mounting.jpg" alt=""><a class="services__link" href="#"><h3 class="services__item-title">Монтаж печатных плат</h3></a></li>
+          <li class="services__item"><img class="services__item-img" src="img/components.jpg" alt=""><a class="services__link services__link--components" href="#"><h3 class="services__item-title">Комплектующие для светотехники</h3></a></li>
         </ul>
       </div>
-    </div>
-    <div class="ask-us">
+    </section>
+    <section class="ask-us">
       <div class="ask-us__wrapper container">
         <img class="ask-us__plane-img" src="img/plane.png" alt="Бумажный самолетик" width="511" height="288">
         <div class="ask-us__form-wrapper">
@@ -119,19 +120,19 @@
           <p class="ask-us__text">Мы проконсультируем Вас бесплатно</p>
           <form class="ask-us__form" action="#" method="get">
             <div class="ask-us__contacts">
-              <input class="ask-us__name" type="text" placeholder="Имя">
-              <input class="ask-us__phone" type="text" placeholder="Телефон">
+              <input class="ask-us__name" type="text" name="user-name" placeholder="Имя">
+              <input class="ask-us__phone" type="tel" name="user-phone-number" placeholder="Телефон">
             </div>
             <textarea class="ask-us__message" name="name" rows="8" cols="80" placeholder="Ваш вопрос"></textarea>
             <div class="ask-us__buttons">
               <input class="ask-us__agreement-input visually-hidden" type="checkbox" id="agreed">
               <label class="ask-us__agreement-text" for="agreed">Я согласен на обработку персональных данных</label>
-              <button class="ask-us__button button" type="submit">Задать вопрос</button>
+              <button class="ask-us__button button" type="submit" name="user-question">Задать вопрос</button>
             </div>
           </form>
         </div>
       </div>
-    </div>
+    </section>
   </main>
 
   <footer class="page-footer">
@@ -139,11 +140,11 @@
       <div class="page-footer__main-section">
         <div class="page-footer__links-wrapper">
           <div class="page-footer__links">
-            <a class="page-footer__logo">
-              <img class="page-footer__logo-img" src="img/logo.svg" alt="Логотип Smart Device">
-              <div class="page-footer__company-name">
-                <span class="page-footer__name">Service Device</span>
-                <span class="page-footer__tagline">умные технологии</span>
+            <a class="logo logo--footer">
+              <img class="logo__img" src="img/logo.svg" alt="Логотип Smart Device">
+              <div class="logo__company-name logo__company-name--footer">
+                <span class="logo__name logo__name--footer">Service Device</span>
+                <span class="logo__tagline">умные технологии</span>
               </div>
             </a>
             <span class="page-footer__years">1999-2018 SD Service Devices</span>
@@ -197,14 +198,14 @@
       <h2 class="modal__title">Закажите звонок</h2>
       <p class="modal__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
       <form class="modal__form" action="#" method="get">
-        <input class="modal__name" type="text" placeholder="Имя" required="">
-        <input class="modal__phone" type="text" placeholder="Телефон" required="">
-        <textarea class="modal__question" name="name" rows="8" cols="80" placeholder="Ваш вопрос" required=""></textarea>
+        <input class="modal__name" type="text" placeholder="Имя" name="name" required="">
+        <input class="modal__phone" type="text" placeholder="Телефон" name="phone-number" required="">
+        <textarea class="modal__question" name="question" rows="8" cols="80" placeholder="Ваш вопрос" required=""></textarea>
         <button class="modal__button button" type="submit">Отправить</button>
         <input class="modal__input visually-hidden" type="checkbox" id="call-agreement" required="">
         <label class="modal__agreement" for="call-agreement">Я согласен на обработку персональных данных</label>
       <form>
-        <button class="modal__close"><span class="visually-hidden">Закрыть</span></button>
+        <button class="modal__close" type="button"><span class="visually-hidden">Закрыть</span></button>
     </form></form></div>
   </section>
   <script src="js/script.js"></script>

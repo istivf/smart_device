@@ -19,7 +19,7 @@
 
 .ask-us__plane-img {
   margin-top: 71px;
-  margin-left: -25px;
+  margin-left: -10px;
   position: absolute;
   top: 0;
   left: 0;
@@ -66,6 +66,8 @@
   padding: 14px 17px;
   background-color: #20bbff;
   border: none;
+  color: #FFFFFF;
+  font-family: $PTMono;
 }
 
 .ask-us__name {
@@ -110,6 +112,10 @@
   justify-content: space-between;
 }
 
+.ask-us__button:hover {
+  background-color: #00a0e6;
+}
+
 .ask-us__agreement-text {
   position: relative;
   font-size: 14px;
@@ -118,6 +124,10 @@
   opacity: 0.8;
   width: 230px;
   padding-top: 8px;
+}
+
+.ask-us__agreement-text:hover {
+  opacity: 0.5;
 }
 
 .ask-us__agreement-text::before {
