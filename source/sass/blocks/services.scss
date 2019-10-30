@@ -27,6 +27,7 @@
   background-color: #666666;
   position: relative;
   margin-bottom: 30px;
+  width: 31.7%;
 }
 
 .services__link {
@@ -48,6 +49,13 @@
   height: inherit;
   background-color: rgba(27,45,55,0.8);
   letter-spacing: -1.7px;
+  width: 100%;
+  height: 100%;
+}
+
+.services__item-img {
+  width: 100%;
+  height: 620px;
 }
 
 .services__item-title {
@@ -65,7 +73,7 @@
   height: 63px;
   width: 63px;
   top: 557px;
-  left: 307px;
+  right: 0;
   background-color: #00B2FF;
 }
 
@@ -75,14 +83,14 @@
   width: 6px;
   height: 9px;
   top: 584px;
-  left: 338px;
+  right: 27px;
   background-image: url("../img/arrow.svg");
 }
 
 @media (max-width: $tablet-width) {
   .services {
     padding-top: 24px;
-    padding-bottom: 32px;
+    padding-bottom: 31px;
   }
 
   .services__title {
@@ -97,9 +105,14 @@
   }
 
   .services__item {
-    width: 720px;
+    width: 721px;
     height: 256px;
     margin-bottom: 46px;
+  }
+
+  .services__item-img {
+    width: 715px;
+    height: 256px;
   }
 
   .services__item--producing {
@@ -130,7 +143,7 @@
     font-size: 19px;
     letter-spacing: -0.8px;
     line-height: 30px;
-    padding-top: 40px;
+    padding-top: 39px;
     padding-left: 44px;
     padding-right: 515px;
   }
@@ -141,10 +154,18 @@
 }
 
 @media (max-width: $mobile-width) {
+  .services {
+    padding-bottom: 33px;
+  }
+
+  .services-wrapper {
+    width: 90.5%;
+  }
+
   .services__title {
     font-size: 28px;
     line-height: 39px;
-    margin-bottom: 42px;
+    margin-bottom: 41px;
   }
 
   .services {
@@ -165,10 +186,17 @@
     margin-bottom: 30px;
   }
 
+  .services__item-img {
+    width: 100%;
+    height: 100%;
+  }
+
   .services__link {
     padding-right: 70px;
     padding-top: 21px;
     padding-left: 35px;
+    line-height: 29px;
+    letter-spacing: -1px;
   }
 
   .services__link::after {
@@ -179,6 +207,4 @@
     padding-right: 87px;
     padding-top: 30px;
   }
-
-
 }

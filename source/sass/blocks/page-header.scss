@@ -12,7 +12,7 @@
 
 .page-header__wrapper {
   max-width: 1422px;
-  padding: 0;
+  padding: 0 15px;
 }
 
 .page-header__top-section {
@@ -76,6 +76,11 @@
   justify-content: space-between;
 }
 
+.page-header__info {
+  position: relative;
+  z-index: 2;
+}
+
 .page-header__info-block {
   width: 698px;
   position: relative;
@@ -121,6 +126,9 @@
 
 .page-header__img {
   position: absolute;
+  top: 174px;
+  right: 144px;
+  z-index: 1;
 }
 
 .page-header__info-button:hover {
@@ -148,8 +156,8 @@
   .page-header {
     padding-top: 19px;
     padding-bottom: 158px;
-    background-size: 465px,605px,cover;
-    background-position: 510px 113px, 457px -45px, center;
+    background-size: cover;
+    background-position: center;
   }
 
   .page-header__wrapper {
@@ -205,7 +213,7 @@
     line-height: 70px;
     letter-spacing: 0.07em;
     max-width: 400px;
-    margin-left: 67px;
+    margin-left: 69px;
     margin-bottom: 28px;
   }
 
@@ -215,6 +223,11 @@
     margin-left: 21px;
     margin-bottom: 55px;
     max-width: 350px;
+  }
+
+  .page-header__img {
+    top: 77px;
+    right: 0;
   }
 
   .page-header__text::before {
@@ -239,8 +252,8 @@
   .page-header {
     padding-top: 16px;
     padding-bottom: 70px;
-    background-size: 301px,577px,cover;
-    background-position: 26px 92px,152px -46px,center;
+    background-size: cover;
+    background-position: center;
   }
 
   .page-header__contacts {
@@ -290,6 +303,10 @@
   .page-header__info-block {
     width: 100%;
     left: auto;
+  }
+
+  .page-header__img {
+    top: 0;
   }
 
   .page-header__info-button {

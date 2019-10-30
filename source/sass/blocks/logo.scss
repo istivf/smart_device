@@ -46,12 +46,14 @@
 
 @media (max-width: $tablet-width) {
   .logo {
-    margin-top: 1px;
+    margin-left: 5px;
+    margin-top: 2px;
   }
 
   .logo--footer {
-    margin-left: 4px;
+    margin-left: 5px;
     margin-bottom: 25px;
+    margin-top: 3px;
   }
 }
 
@@ -63,10 +65,18 @@
     margin-left: -5px;
   }
 
+  .logo__img {
+    margin-top: -1px;
+  }
+
   .logo--footer {
     margin-left: 0;
     margin-top: 30px;
     margin-bottom: 0px;
+  }
+
+  .logo__img--footer {
+    margin-top: -5px;
   }
 
   .logo__name,

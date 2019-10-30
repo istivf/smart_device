@@ -33,8 +33,12 @@
           <button class="page-header__info-button button" type="button"><span class="page-header__button-text">Получить бесплатную консультацию</span><span class="page-header__button-mobile">Бесплатная консультация</span></button>
           <button class="page-header__scroll" type="button">Скролл <span class="page-header__span-down">вниз</span></button>
         </div>
-        <img class="page-header__img" src="img/header-img.png" alt="Платы">
       </div>
+      <picture>
+        <source media="(max-width: 767px)" srcset="img/header-img-mobile.png">
+        <source media="(max-width: 1023px)" srcset="img/header-img-tablet.png">
+        <img class="page-header__img" src="img/header-img.png" alt="Платы">
+      </picture>
     </div>
   </header>
 
@@ -106,9 +110,27 @@
       <div class="services-wrapper container">
         <h2 class="services__title">Service Device предлагает следующие товары и услуги</h2>
         <ul class="services__list">
-          <li class="services__item"><img class="services__item-img" src="img/producing.jpg" alt=""><a class="services__link" href="#"><h3 class="services__item-title">Производство печатных плат</h3></a></li>
-          <li class="services__item"><img class="services__item-img" src="img/mounting.jpg" alt=""><a class="services__link" href="#"><h3 class="services__item-title">Монтаж печатных плат</h3></a></li>
-          <li class="services__item"><img class="services__item-img" src="img/components.jpg" alt=""><a class="services__link services__link--components" href="#"><h3 class="services__item-title">Комплектующие для светотехники</h3></a></li>
+          <li class="services__item">
+            <picture>
+              <source media="(max-width: 767px)" srcset="img/producing-mobile.jpg">
+              <source media="(max-width: 1023px)" srcset="img/producing-tablet.jpg">
+              <img class="services__item-img" src="img/producing.jpg" alt="Производство печатных плат">
+            </picture>
+            <a class="services__link" href="#"><h3 class="services__item-title">Производство печатных плат</h3></a></li>
+          <li class="services__item">
+            <picture>
+              <source media="(max-width: 767px)" srcset="img/mounting-mobile.jpg">
+              <source media="(max-width: 1023px)" srcset="img/mounting-tablet.jpg">
+              <img class="services__item-img" src="img/mounting.jpg" alt="Монтаж печатных плат">
+            </picture>
+            <a class="services__link" href="#"><h3 class="services__item-title">Монтаж печатных плат</h3></a></li>
+          <li class="services__item">
+            <picture>
+              <source media="(max-width: 767px)" srcset="img/components-mobile.jpg">
+              <source media="(max-width: 1023px)" srcset="img/components-tablet.jpg">
+              <img class="services__item-img" src="img/components.jpg" alt="Комплектующие для светотехники">
+            </picture>
+            <a class="services__link services__link--components" href="#"><h3 class="services__item-title">Комплектующие для светотехники</h3></a></li>
         </ul>
       </div>
     </section>
@@ -141,7 +163,7 @@
         <div class="page-footer__links-wrapper">
           <div class="page-footer__links">
             <a class="logo logo--footer">
-              <img class="logo__img" src="img/logo.svg" alt="Логотип Smart Device">
+              <img class="logo__img logo__img--footer" src="img/logo.svg" alt="Логотип Smart Device">
               <div class="logo__company-name logo__company-name--footer">
                 <span class="logo__name logo__name--footer">Service Device</span>
                 <span class="logo__tagline">умные технологии</span>

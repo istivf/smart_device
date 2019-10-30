@@ -14,7 +14,6 @@
   position: relative;
   flex-direction: row-reverse;
   justify-content: flex-start;
-  width: 100%;
 }
 
 .ask-us__plane-img {
@@ -159,7 +158,7 @@
   .ask-us {
     padding-top: 78px;
     background-image: none;
-    padding-bottom: 103px;
+    padding-bottom: 104px;
   }
 
   .ask-us__wrapper {
@@ -197,13 +196,14 @@
   .ask-us__phone {
     width: 280px;
     padding-left: 19px;
-    padding-top: 8px;
+    padding-top: 11px;
   }
 
   .ask-us__message {
     margin-bottom: 37px;
     height: 160px;
     width: 100%;
+    padding-top: 15px;
   }
 
   .ask-us__button {
