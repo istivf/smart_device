@@ -11,17 +11,20 @@ var contactsButton = document.querySelector('.page-footer__title--contacts');
 var sendButton = overlay.querySelector('.modal__button');
 var scrollButton = document.querySelector('.page-header__scroll');
 var infoBlock = document.querySelector('.main-info');
+var body = document.querySelector('body');
 var ESC_KEYCODE = 27;
 
 var openModal = function () {
   overlay.classList.remove('modal--hidden');
   document.addEventListener('keydown', onModalEscPress);
   nameInput.focus();
+  body.classList.add('no-scroll');
 };
 
 var closeModal = function () {
   overlay.classList.add('modal--hidden');
   document.removeEventListener('keydown', onModalEscPress);
+  body.classList.remove('no-scroll');
 };
 
 var onModalEscPress = function (evt) {

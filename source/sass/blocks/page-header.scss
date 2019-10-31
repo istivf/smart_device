@@ -3,7 +3,7 @@
   color: #FFFFFF;
   padding-top: 33px;
   position: relative;
-  padding-bottom: 277px;
+  padding-bottom: 274px;
   background-image: url(../img/headermask.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -61,6 +61,7 @@
 .page-header__button {
   margin-left: 50px;
   text-decoration: none;
+  margin-top: 4px;
 }
 
 .page-header__button:hover {
@@ -119,7 +120,7 @@
   background-color: #00B2FF;
   border-radius: 5px;
   letter-spacing: 1.9px;
-  padding: 18px 45px 19px;
+  padding: 18px 46px 23px;
   background-color: #00B2FF;
   border: none;
 }
@@ -146,6 +147,10 @@
   color: #FFFFFF;
   opacity: 0.5;
   transform: rotate(-90deg);
+}
+
+.page-header__scroll:hover {
+  opacity: 0.7;
 }
 
 .page-header__span-down {
@@ -223,6 +228,10 @@
     margin-left: 21px;
     margin-bottom: 55px;
     max-width: 350px;
+  }
+
+  .page-header__scroll {
+    display: none;
   }
 
   .page-header__img {
