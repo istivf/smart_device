@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Компания по производству печатных плат">
   <title>Smart Device</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -30,8 +31,8 @@
         <h1 class="page-header__title">Печатные платы</h1>
         <div class="page-header__info-block">
           <p class="page-header__text">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-          <a class="page-header__info-button button" type="button"><span class="page-header__button-text">Получить бесплатную консультацию</span><span class="page-header__button-mobile">Бесплатная консультация</span></a>
-          <a class="page-header__scroll" type="button">Скролл вниз</a>
+          <a class="page-header__info-button button"><span class="page-header__button-text">Получить бесплатную консультацию</span><span class="page-header__button-mobile">Бесплатная консультация</span></a>
+          <a class="page-header__scroll">Скролл вниз</a>
         </div>
       </div>
       <picture>
@@ -142,10 +143,10 @@
           <p class="ask-us__text">Мы проконсультируем Вас бесплатно</p>
           <form class="ask-us__form" action="#" method="get">
             <div class="ask-us__contacts">
-              <input class="ask-us__name" type="text" name="user-name"placeholder="Имя">
-              <input class="ask-us__phone" type="tel" name="user-phone-number" id="phone-number" placeholder="Телефон">
+              <input class="ask-us__name" type="text" name="user-name" placeholder="Имя" aria-label="Имя">
+              <input class="ask-us__phone" type="tel" name="user-phone-number" id="phone-number" placeholder="Телефон" aria-label="Номер телефона">
             </div>
-            <textarea class="ask-us__message" name="name" rows="8" cols="80" placeholder="Ваш вопрос"></textarea>
+            <textarea class="ask-us__message" name="name" rows="8" cols="80" placeholder="Ваш вопрос" aria-label="Введите сообщение"></textarea>
             <div class="ask-us__buttons">
               <input class="ask-us__agreement-input visually-hidden" type="checkbox" id="agreed">
               <label class="ask-us__agreement-text" for="agreed">Я согласен на обработку персональных данных</label>
@@ -182,12 +183,12 @@
             <h2 class="page-footer__title page-footer__nav-title page-footer__list-closed">Разделы сайта</h2>
             <ul class="page-footer__nav-list">
               <li class="page-footer__nav-item"><a class="page-footer__nav-link" href="#">О компании</a></li>
-              <li class="page-footer__nav-item"><a class="page-footer__nav-link" href="#">Продукты</a></li>
-              <li class="page-footer__nav-item"><a class="page-footer__nav-link" href="#">Производство печатных плат</a></li>
-              <li class="page-footer__nav-item"><a class="page-footer__nav-link" href="#">Монтаж печатных плат</a></li>
               <li class="page-footer__nav-item"><a class="page-footer__nav-link" href="#">Комплектующие</a></li>
+              <li class="page-footer__nav-item"><a class="page-footer__nav-link" href="#">Продукты</a></li>
               <li class="page-footer__nav-item"><a class="page-footer__nav-link" href="#">Доставка</a></li>
+              <li class="page-footer__nav-item"><a class="page-footer__nav-link" href="#">Производство печатных плат</a></li>
               <li class="page-footer__nav-item"><a class="page-footer__nav-link" href="#">Контакты</a></li>
+              <li class="page-footer__nav-item"><a class="page-footer__nav-link" href="#">Монтаж печатных плат</a></li>
             </ul>
           </div>
           <div class="page-footer__contacts">
@@ -220,9 +221,9 @@
       <h2 class="modal__title">Закажите звонок</h2>
       <p class="modal__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
       <form class="modal__form" action="#" method="get">
-        <input class="modal__name" type="text" placeholder="Имя" name="name" required>
-        <input class="modal__phone" type="tel" placeholder="Телефон" name="phone-number" required>
-        <textarea class="modal__question" name="question" rows="8" cols="80" placeholder="Ваш вопрос" required></textarea>
+        <input class="modal__name" type="text" placeholder="Имя" name="name" aria-label="Имя" required>
+        <input class="modal__phone" type="tel" placeholder="Телефон" name="phone-number" id="phone-number-modal" aria-label="Номер телефона" required>
+        <textarea class="modal__question" name="question" rows="8" cols="80" placeholder="Ваш вопрос" aria-label="Введите вопрос" required></textarea>
         <button class="modal__button button" type="submit">Отправить</button>
         <input class="modal__input visually-hidden" type="checkbox" id="call-agreement" required>
         <label class="modal__agreement" for="call-agreement">Я согласен на обработку персональных данных</label>
@@ -230,13 +231,7 @@
         <button class="modal__close" type="button"><span class="visually-hidden">Закрыть</span></button>
     </div>
   </section>
-  <script src="https://unpkg.com/imask">
-    var element = document.getElementById('phone-number');
-    var maskOptions = {
-      mask: '+{7}(000)000-00-00'
-    };
-    var mask = IMask(element, maskOptions);
-  </script>
+  <script src="https://unpkg.com/imask"></script>
   <script src="js/script.js"></script>
 </body>
 </html>

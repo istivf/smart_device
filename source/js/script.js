@@ -14,6 +14,8 @@ var infoList = document.querySelector('.main-info__list');
 var body = document.querySelector('body');
 var headerFormButton = document.querySelector('.page-header__info-button');
 var footerForm = document.querySelector('.ask-us');
+var footerPhone = document.getElementById('phone-number');
+var modalPhone = document.getElementById('phone-number-modal');
 var ESC_KEYCODE = 27;
 
 var openModal = function () {
@@ -86,3 +88,9 @@ scrollButton.addEventListener('click', function () {
 headerFormButton.addEventListener('click', function () {
   footerForm.scrollIntoView({block: 'start', behavior: 'smooth'});
 });
+
+var maskOptions = {
+  mask: '+{7}(000)000-00-00'
+};
+var maskFooter = IMask(footerPhone, maskOptions);
+var maskModal = IMask(modalPhone, maskOptions);
