@@ -190,6 +190,7 @@
 .page-footer__developed-by {
   margin-left: 180px;
   margin-right: 1px;
+  cursor: pointer;;
 }
 
 @media (max-width: $tablet-width) {
@@ -396,7 +397,7 @@
     background-color: #C4C4C4;
   }
 
-  .page-footer__list--closed::after {
+  .page-footer__list-closed::after {
     content: "";
     position: absolute;
     width: 16px;
@@ -407,13 +408,13 @@
     transform: rotate(90deg);
   }
 
-  .page-footer__list--closed + .page-footer__nav-list,
-  .page-footer__list--closed + .page-footer__contacts-list {
+  .page-footer__list-closed + .page-footer__nav-list,
+  .page-footer__list-closed + .page-footer__contacts-list {
     display: none;
   }
 
-  .page-footer__list--opened + .page-footer__nav-list,
-  .page-footer__list--opened + .page-footer__contacts-list {
+  .page-footer__list-opened + .page-footer__nav-list,
+  .page-footer__list-opened + .page-footer__contacts-list {
     display: block;
   }
 }

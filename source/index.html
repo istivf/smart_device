@@ -30,8 +30,8 @@
         <h1 class="page-header__title">Печатные платы</h1>
         <div class="page-header__info-block">
           <p class="page-header__text">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-          <button class="page-header__info-button button" type="button"><span class="page-header__button-text">Получить бесплатную консультацию</span><span class="page-header__button-mobile">Бесплатная консультация</span></button>
-          <button class="page-header__scroll" type="button">Скролл <span class="page-header__span-down">вниз</span></button>
+          <a class="page-header__info-button button" type="button"><span class="page-header__button-text">Получить бесплатную консультацию</span><span class="page-header__button-mobile">Бесплатная консультация</span></a>
+          <a class="page-header__scroll" type="button">Скролл вниз</a>
         </div>
       </div>
       <picture>
@@ -179,7 +179,7 @@
         </div>
         <div class="page-footer__info">
           <div class="page-footer__navigation">
-            <h2 class="page-footer__title page-footer__nav-title page-footer__list--closed">Разделы сайта</h2>
+            <h2 class="page-footer__title page-footer__nav-title page-footer__list-closed">Разделы сайта</h2>
             <ul class="page-footer__nav-list">
               <li class="page-footer__nav-item"><a class="page-footer__nav-link" href="#">О компании</a></li>
               <li class="page-footer__nav-item"><a class="page-footer__nav-link" href="#">Продукты</a></li>
@@ -191,8 +191,8 @@
             </ul>
           </div>
           <div class="page-footer__contacts">
-            <h2 class="page-footer__title page-footer__title--contacts page-footer__list--opened">Наш офис</h2>
-            <ul class="page-footer__contacts-list page-footer__list--opened">
+            <h2 class="page-footer__title page-footer__title--contacts page-footer__list-opened">Наш офис</h2>
+            <ul class="page-footer__contacts-list">
               <li class="page-footer__contacts-item"><p class="page-footer__adress">г. Мытищи, Олимпийский проспект, д.10</p></li>
               <li class="page-footer__contacts-item"><a class="page-footer__contact-link" href="tel:+74955894050">+7 (495) 589-40-50</a></li>
               <li class="page-footer__contacts-item"><a class="page-footer__contact-link" href="tel:+79250038767">+7 (925) 003-87-67</a></li>
@@ -210,26 +210,33 @@
           <a class="page-footer__privacy-terms" href="#">Условия конфиденциальности</a>
         </div>
         <div>
-          <span class="page-footer__developed-by">Developed by wow studio</span>
+          <a class="page-footer__developed-by">Developed by wow studio</a>
         </div>
       </div>
     </div>
   </footer>
-  <section class="modal__overlay modal--hidden">
-    <div class="modal">
+  <section class="modal modal--hidden">
+    <div class="modal__block">
       <h2 class="modal__title">Закажите звонок</h2>
       <p class="modal__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
       <form class="modal__form" action="#" method="get">
         <input class="modal__name" type="text" placeholder="Имя" name="name" required>
-        <input class="modal__phone" type="text" placeholder="Телефон" name="phone-number" required>
+        <input class="modal__phone" type="tel" placeholder="Телефон" name="phone-number" required>
         <textarea class="modal__question" name="question" rows="8" cols="80" placeholder="Ваш вопрос" required></textarea>
         <button class="modal__button button" type="submit">Отправить</button>
         <input class="modal__input visually-hidden" type="checkbox" id="call-agreement" required>
         <label class="modal__agreement" for="call-agreement">Я согласен на обработку персональных данных</label>
-      <form>
+      </form>
         <button class="modal__close" type="button"><span class="visually-hidden">Закрыть</span></button>
     </div>
   </section>
+  <script src="https://unpkg.com/imask">
+    var element = document.getElementById('phone-number');
+    var maskOptions = {
+      mask: '+{7}(000)000-00-00'
+    };
+    var mask = IMask(element, maskOptions);
+  </script>
   <script src="js/script.js"></script>
 </body>
 </html>

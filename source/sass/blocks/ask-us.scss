@@ -28,6 +28,7 @@
   width: 570px;
   margin-top: 2px;
   z-index: 1;
+  background-color: #00B2FF;
 }
 
 .ask-us__title {
@@ -67,6 +68,7 @@
   border: none;
   color: #FFFFFF;
   font-family: $PTMono;
+
 }
 
 .ask-us__name {
@@ -123,6 +125,7 @@
   opacity: 0.8;
   width: 230px;
   padding-top: 8px;
+  cursor: pointer;
 }
 
 .ask-us__agreement-text:hover {

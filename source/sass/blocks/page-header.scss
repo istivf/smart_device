@@ -3,7 +3,7 @@
   color: #FFFFFF;
   padding-top: 33px;
   position: relative;
-  padding-bottom: 274px;
+  padding-bottom: 293px;
   background-image: url(../img/headermask.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -62,6 +62,7 @@
   margin-left: 50px;
   text-decoration: none;
   margin-top: 4px;
+  width: 180px;
 }
 
 .page-header__button:hover {
@@ -103,7 +104,7 @@
   position: relative;
   font-size: 22px;
   line-height: 34px;
-  margin-bottom: 44px;
+  margin-bottom: 60px;
 }
 
 .page-header__text::before {
@@ -120,9 +121,10 @@
   background-color: #00B2FF;
   border-radius: 5px;
   letter-spacing: 1.9px;
-  padding: 18px 46px 23px;
+  padding: 18px 46px 21px;
   background-color: #00B2FF;
   border: none;
+  width: 408px;
 }
 
 .page-header__img {
@@ -140,21 +142,18 @@
   border: none;
   background: none;
   position: absolute;
-  left: -139px;
-  top: 298px;
+  left: -132px;
+  top: 300px;
   font-size: 14px;
   line-height: 16px;
   color: #FFFFFF;
   opacity: 0.5;
   transform: rotate(-90deg);
+  cursor: pointer;
 }
 
 .page-header__scroll:hover {
   opacity: 0.7;
-}
-
-.page-header__span-down {
-  margin-left: 6px;
 }
 
 @media (max-width: $tablet-width) {
@@ -166,8 +165,8 @@
   }
 
   .page-header__wrapper {
-    max-width: 729px;
-    padding: 0;
+    max-width: 100%;
+    padding: 0 20px;
   }
 
   .page-header__top-section {
@@ -176,7 +175,7 @@
 
   .page-header__contacts {
     display: flex;
-    padding-right: 6px;
+    padding-right: 5px;
     width: 84px;
   }
 
@@ -265,6 +264,12 @@
     background-position: center;
   }
 
+  .page-header__wrapper {
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+
   .page-header__contacts {
     padding-top: 0;
     padding-right: 0;
@@ -320,7 +325,6 @@
 
   .page-header__info-button {
     width: 287px;
-    margin-left: 0;
     margin-left: 3px;
     padding-top: 19px;
     padding-bottom: 20px;

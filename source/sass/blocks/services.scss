@@ -17,7 +17,7 @@
 .services__list {
   @include list;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 
@@ -28,6 +28,11 @@
   position: relative;
   margin-bottom: 30px;
   width: 31.7%;
+  margin-right: 2.4%;
+}
+
+.services__item:nth-child(3n+3) {
+  margin-right: 0;
 }
 
 .services__link {

@@ -1,4 +1,4 @@
-.modal__overlay {
+.modal {
   position: fixed;
   width: 100%;
   width: 100%;
@@ -6,8 +6,6 @@
   left: 0;
   right: 0;
   bottom: 0;
-  animation-name: bounce;
-  animation-duration: 0.6s;
   z-index: 2;
   background-color: rgba(0,0,0,0.6);
 }
@@ -16,7 +14,7 @@
   display: none;
 }
 
-.modal {
+.modal__block {
   width: 490px;
   background-color: #00B2FF;
   color: #FFFFFF;
@@ -26,7 +24,7 @@
   padding-right: 39px;
   box-sizing: border-box;
   position: absolute;
-  top: 136px;
+  top: 20%;;
   left: 50%;
   margin-left: -245px;
   display: flex;
@@ -52,6 +50,7 @@
 .modal__agreement {
   font-size: 14px;
   line-height: 16px;
+  cursor: pointer;
 }
 
 .modal__form {
@@ -68,6 +67,7 @@
     margin-bottom: 30px;
     font-size: 15px;
     letter-spacing: 1px;
+    color: #FFFFFF;
 }
 
 .modal__name::-webkit-input-placeholder,
@@ -84,6 +84,7 @@
 
 .modal__question {
   height: 70px;
+  resize: none;
 }
 
 .modal__button {
@@ -118,6 +119,11 @@
   border: 1px solid #fff;
 }
 
+.modal__input {
+  top: 555px;
+  left: 48px;
+}
+
 .modal__input:checked + .modal__agreement::after {
   content: "";
   position: absolute;
@@ -136,6 +142,7 @@
   right: 19px;
   background: none;
   border: none;
+  cursor: pointer;
 }
 
 .modal__close::before {
