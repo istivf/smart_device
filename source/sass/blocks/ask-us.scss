@@ -28,7 +28,6 @@
   width: 570px;
   margin-top: 2px;
   z-index: 1;
-  background-color: #00B2FF;
 }
 
 .ask-us__title {
@@ -68,7 +67,8 @@
   border: none;
   color: #FFFFFF;
   font-family: $PTMono;
-
+  border-radius: 0;
+    -webkit-appearance: none;
 }
 
 .ask-us__name {
@@ -155,6 +155,12 @@
 .ask-us__button {
   width: 270px;
   padding-top: 13px;
+}
+
+@media (max-width: 1200px) {
+  .ask-us__plane-img {
+    left: -70px;
+  }
 }
 
 @media (max-width: $tablet-width) {

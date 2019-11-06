@@ -10,7 +10,7 @@ var navButton = document.querySelector('.page-footer__nav-title');
 var contactsButton = document.querySelector('.page-footer__title--contacts');
 var sendButton = overlay.querySelector('.modal__button');
 var scrollButton = document.querySelector('.page-header__scroll');
-var infoList = document.querySelector('.main-info__list');
+var infoSection = document.querySelector('.main-info');
 var body = document.querySelector('body');
 var headerFormButton = document.querySelector('.page-header__info-button');
 var footerForm = document.querySelector('.ask-us');
@@ -82,7 +82,7 @@ sendButton.addEventListener('click', function () {
 });
 
 scrollButton.addEventListener('click', function () {
-  infoList.scrollIntoView({block: 'start', behavior: 'smooth'});
+  infoSection.scrollIntoView({block: 'start', behavior: 'smooth'});
 });
 
 headerFormButton.addEventListener('click', function () {
